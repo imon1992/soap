@@ -2,12 +2,6 @@
 
 class CUrlFootballPool {
 
-    protected $soapServer;
-
-    public function  __construct(){
-        $this->soapServer = SOAP_SERVER;
-    }
-
     private function clearResponse($responseXML){
         $responseXML = str_replace("<soap:Body>", "", $responseXML);
         $responseXML = str_replace("</soap:Body>", "", $responseXML);
@@ -83,17 +77,18 @@ class CUrlFootballPool {
 
     public function getDefendersByCountry($country){
         $result = [];
-        $postParams = "sCountryName=$country";
+        $enumPost = SOAP_DEFENDERS_POST;
+        $enumPost = str_replace('countryValue',$country,$enumPost);
+
         $headers = $this->makeHeaders();
-        array_push($headers,"Content-length: " . strlen(SOAP_DEFENDERS_POST));
+        array_push($headers,"Content-length: " . strlen($enumPost));
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, SOAP_SERVER);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_TIMEOUT, 10);
         curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $postParams);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, SOAP_DEFENDERS_POST);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $enumPost);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
         $response = curl_exec($ch);
@@ -112,15 +107,18 @@ class CUrlFootballPool {
     public function getCountries(){
         $result = [];
 
+        $citiesPost = SOAP_COUNTRIES_POST;
+        $citiesPost = str_replace('allCountries','true',$citiesPost);
+
         $headers = $this->makeHeaders();
-        array_push($headers,"Content-length: " . strlen(SOAP_COUNTRIES_POST));
+        array_push($headers,"Content-length: " . strlen($citiesPost));
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, SOAP_SERVER);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_TIMEOUT, 10);
         curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, SOAP_COUNTRIES_POST);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $citiesPost);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
         $response = curl_exec($ch);

@@ -44,7 +44,7 @@ class SoapClientFootballPool {
         foreach($defenders->AllDefendersResult->string as $defender){
             $result[] = $defender;
         }
-
+//var_dump($result);
         return $result;
     }
 

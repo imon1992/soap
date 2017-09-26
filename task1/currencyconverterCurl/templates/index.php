@@ -32,11 +32,11 @@ header('Content-Type: text/html; charset=utf-8');
         </form>
         <?php if ($currencies !== null){ ?>
 
-        <div class="row">
-            <?php foreach ($currencies as $currency) { ?>
-                <ul>
-                    <?php foreach ($currency as $currencyElement){ ?>
-                    <li><?php echo $currencyElement;
+                <div class="row">
+                            <?php foreach ($currencies as $currency) { ?>
+                                            <ul>
+                                                                <?php foreach ($currency as $currencyElement){ ?>
+                                                                                    <li><?php echo $currencyElement;
                         } ?></li>
                 </ul>
                 <hr>
@@ -48,8 +48,8 @@ header('Content-Type: text/html; charset=utf-8');
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-</body>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="js/bootstrap.min.js"></script>
+            </body>
 </html>

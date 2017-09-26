@@ -1,6 +1,5 @@
 <?php
 define("SOAP_SERVER", "http://footballpool.dataaccess.eu/data/info.wso?WSDL");
-//define("SOAP_OP_CITY", "http://footballpool.dataaccess.eu/data/info.wso?op=Cities");
 define("SOAP_CITIES_POST", '<?xml version="1.0" encoding="utf-8"?>
                             <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
                                 <soap:Body>
@@ -19,7 +18,7 @@ define("SOAP_DEFENDERS_POST", '<?xml version="1.0" encoding="utf-8"?>
                                 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
                                     <soap:Body>
                                         <AllDefenders xmlns="http://footballpool.dataaccess.eu">
-                                            <sCountryName>string</sCountryName>
+                                            <sCountryName>countryValue</sCountryName>
                                         </AllDefenders>
                                     </soap:Body>
                                 </soap:Envelope>');
@@ -27,11 +26,10 @@ define("SOAP_COUNTRIES_POST", '<?xml version="1.0" encoding="utf-8"?>
                                     <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
                                       <soap:Body>
                                         <CountryNames xmlns="http://footballpool.dataaccess.eu">
-                                          <bWithCompetitors>boolean</bWithCompetitors>
+                                          <bWithCompetitors>allCountries</bWithCompetitors>
                                         </CountryNames>
                                       </soap:Body>
                                     </soap:Envelope>');
-//define("SOAP_OP_CITY", "http://footballpool.dataaccess.eu/data/info.wso?op=Cities");
 define("CONTENT_TYPE", "Content-type: text/xml;charset=\"utf-8\"");
 define("ACCEPT", "Accept: text/xml");
 define("CACHE_CONTROL", "Cache-Control: no-cache");
