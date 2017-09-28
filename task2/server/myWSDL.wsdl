@@ -1,4 +1,4 @@
-<?xml version ='1.0' encoding ='UTF-8' ?>
+<?xml version ='1.0' encoding ='UTF-8'?>
 <definitions name='StockQuote'
              targetNamespace='http://example.org/StockQuote'
              xmlns:tns=' http://example.org/StockQuote '
@@ -8,25 +8,25 @@
              xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'
              xmlns='http://schemas.xmlsoap.org/wsdl/'>
 
-    <message name='getQuoteRequest'>
-        <part name='symbol' type='xsd:string'/>
+    <message name='asdRequest'>
+        <part name='id' type='xsd:string'/>
     </message>
-    <message name='getQuoteResponse'>
+    <message name='asdResponse'>
         <part name='Result' type='xsd:float'/>
     </message>
 
     <portType name='StockQuotePortType'>
-        <operation name='getQuote'>
-            <input message='tns:getQuoteRequest'/>
-            <output message='tns:getQuoteResponse'/>
+        <operation name='asd'>
+            <input message='tns:asdRequest'/>
+            <output message='tns:asdResponse'/>
         </operation>
     </portType>
 
     <binding name='StockQuoteBinding' type='tns:StockQuotePortType'>
         <soap:binding style='rpc'
                       transport='http://schemas.xmlsoap.org/soap/http'/>
-        <operation name='getQuote'>
-            <soap:operation soapAction='urn:xmethods-delayed-quotes#getQuote'/>
+        <operation name='asd'>
+            <soap:operation soapAction='urn:xmethods-delayed-quotes#asd'/>
             <input>
                 <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
                            encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
@@ -40,7 +40,7 @@
 
     <service name='StockQuoteService'>
         <port name='StockQuotePort' binding='StockQuoteBinding'>
-            <soap:address location='http://soap/task2/server/asd.wsdl'/>
+            <soap:address location='http://192.168.0.15/~user14/soap/task2/server/libs/soapServer.php'/>
         </port>
     </service>
-</definitions> 
+</definitions>

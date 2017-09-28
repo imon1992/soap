@@ -1,7 +1,7 @@
 <?php
 ini_set("soap.wsdl_cache_enabled", "0");
-include("classTest.php");
-
+//include("classTest.php");
+include('CarInfoSql.php');
 //$quotes = array(
 //    "ibm" => 98.42
 //);
@@ -18,7 +18,13 @@ function asd($id){
 
 ini_set("soap.wsdl_cache_enabled", "0"); // отключаем кэширование WSDL
 $server = new SoapServer("stockquote1.wsdl");
+//var_dump($server);
 //$server->addFunction("asd");
-$server->setClass('classTest');
+$server->setClass('CarInfoSql');
+//$server->setClass('classTest');
+//$server->setPersistence(SOAP_PERSISTENCE_SESSION);
+
+ob_clean();
+ob_start();
 $server->handle();
 ?>
