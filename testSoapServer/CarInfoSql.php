@@ -148,6 +148,6 @@ define("MY_SQL_DB_NAME",     "carTest5");
 define("MY_SQL_USER",     "user14");
 define("MY_SQL_PASSWORD",     "tuser14");
 
-//$c = new carInfoSql(MY_SQL_DB, MY_SQL_HOST, MY_SQL_DB_NAME, MY_SQL_USER, MY_SQL_PASSWORD);
-//$x = $c->getModelYearAmountColorSpeedPrice(1);
+$c = new carInfoSql(MY_SQL_DB, MY_SQL_HOST, MY_SQL_DB_NAME, MY_SQL_USER, MY_SQL_PASSWORD);
+$x = $c->getModelYearAmountColorSpeedPrice(1);
 //var_dump($x);

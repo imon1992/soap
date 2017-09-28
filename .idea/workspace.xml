@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18ac0dc2-fd8b-4311-bddb-10ac5cbe0a57" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\OpenServer\domains\soap\config.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\OpenServer\domains\soap\index.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\OpenServer\domains\soap\libs\.SoapClien.php.swp" afterPath="" />
-      <change type="DELETED" beforePath="C:\OpenServer\domains\soap\libs\SoapClien.php" afterPath="" />
+      <change type="MOVED" beforePath="C:\OpenServer\domains\soap\task2\server\libs\carInfoSql.php" afterPath="$PROJECT_DIR$/task2/server/libs/CarInfoSql.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="soap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,59 +28,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cuurl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task1/curl/cuurl.php">
+      <file leaf-file-name="stockquote1.wsdl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testSoapServer/stockquote1.wsdl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.454545" vertical-offset="0" max-vertical-offset="1122">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="59" selection-end-column="18" />
-              <folding>
-                <marker date="1506422425251" expanded="true" signature="420:547" placeholder="..." />
-                <marker date="1506422425251" expanded="true" signature="436:530" placeholder="..." />
-                <marker date="1506422425251" expanded="true" signature="495:513" placeholder="..." />
-                <marker date="1506422425251" expanded="true" signature="1552:1609" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task1/curl/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.384615" vertical-offset="51" max-vertical-offset="765">
-              <caret line="25" column="27" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="27" />
-              <folding>
-                <marker date="1506424974587" expanded="true" signature="336:603" placeholder="..." />
-                <marker date="1506424974587" expanded="true" signature="380:558" placeholder="..." />
-                <marker date="1506424974587" expanded="true" signature="467:513" placeholder="..." />
-                <marker date="1506424974587" expanded="true" signature="778:1065" placeholder="..." />
-                <marker date="1506424974587" expanded="true" signature="824:1016" placeholder="..." />
-                <marker date="1506424974587" expanded="true" signature="917:969" placeholder="..." />
-                <marker date="1506424974587" expanded="true" signature="1241:1620" placeholder="..." />
-                <marker date="1506424974587" expanded="true" signature="1289:1571" placeholder="..." />
-                <marker date="1506424974587" expanded="true" signature="1386:1522" placeholder="..." />
-                <marker date="1506424974587" expanded="true" signature="1800:2194" placeholder="..." />
-                <marker date="1506424974587" expanded="true" signature="1850:2141" placeholder="..." />
-                <marker date="1506424974587" expanded="true" signature="1947:2090" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CUrlFootballPool.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task1/curl/libs/CUrlFootballPool.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="2465">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/task1/curl/index.php">
+      <file leaf-file-name="server1.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testSoapServer/server1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.11703958" vertical-offset="0" max-vertical-offset="581">
-              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+            <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="493">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="classTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testSoapServer/classTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="204">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client3.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testSoapServer/client3.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.14629948" vertical-offset="0" max-vertical-offset="581">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -111,6 +91,17 @@
         <option value="$PROJECT_DIR$/task1/curl/config.php" />
         <option value="$PROJECT_DIR$/task1/curl/libs/CUrlFootballPool.php" />
         <option value="$PROJECT_DIR$/task1/curl/index.php" />
+        <option value="$PROJECT_DIR$/task2/server/libs/carInfoSql.php" />
+        <option value="$PROJECT_DIR$/task2/server/libs/CarInfoSql.php" />
+        <option value="$PROJECT_DIR$/task2/server/asd.wsdl" />
+        <option value="$PROJECT_DIR$/task2/server/libs/soapServer.php" />
+        <option value="$PROJECT_DIR$/testSoapServer/soapServer.php" />
+        <option value="$PROJECT_DIR$/testSoapServer/stockquote.wsdl" />
+        <option value="$PROJECT_DIR$/testSoapServer/CarInfoSql.php" />
+        <option value="$PROJECT_DIR$/testSoapServer/classTest.php" />
+        <option value="$PROJECT_DIR$/testSoapServer/stockquote1.wsdl" />
+        <option value="$PROJECT_DIR$/testSoapServer/server1.php" />
+        <option value="$PROJECT_DIR$/testSoapServer/client3.php" />
       </list>
     </option>
   </component>
@@ -132,7 +123,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -148,6 +139,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -176,11 +168,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="task1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="footballPoolSoap" />
+              <option name="myItemId" value="testSoapServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -194,53 +182,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="task1" />
+              <option name="myItemId" value="task2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="footballPoolSoap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="soap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="soap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="soap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="soap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="curl" />
+              <option name="myItemId" value="server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,9 +201,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../php/MyPHP/task13/phpunit.phar" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\soap\testSoapServer" />
       <recent name="C:\OpenServer\domains\soap\task1\curl" />
       <recent name="C:\OpenServer\domains\soap\task1\curl\libs" />
       <recent name="C:\OpenServer\domains\soap\task1\currencyconverterSoap" />
@@ -276,15 +229,24 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="18ac0dc2-fd8b-4311-bddb-10ac5cbe0a57" name="Default" comment="" />
@@ -295,25 +257,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -340,11 +302,33 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/task2/server/libs/CarInfoSql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2737">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT id, m..cars..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT c.id,..car..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT c.id,..cars..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT c.id,..cars..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT c.mod..car..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT c.mod..car..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT c.id,..cars..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT c.id,..cars..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT model..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT color..carColor..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT yearO..carYearOfIssue..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT mark ..carMark..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT engin..carEngineCapacity..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT mo.mo..car..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/task1/footballPoolSoap/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35111877" vertical-offset="0" max-vertical-offset="581">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -352,7 +336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28169015" vertical-offset="843" max-vertical-offset="1445">
           <caret line="59" column="45" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -360,7 +343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38554215" vertical-offset="422" max-vertical-offset="1020">
           <caret line="38" column="52" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -368,7 +350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29776248" vertical-offset="99" max-vertical-offset="680">
           <caret line="16" column="85" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -376,7 +357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
           <caret line="1" column="77" selection-start-line="1" selection-start-column="77" selection-end-line="1" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -384,7 +364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="306">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -392,56 +371,100 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53356284" vertical-offset="149" max-vertical-offset="1207">
           <caret line="27" column="41" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task2/server/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task1/curl/cuurl.php">
+    <entry file="file://$PROJECT_DIR$/task2/server/libs/CarInfoSql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.454545" vertical-offset="0" max-vertical-offset="1122">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="59" selection-end-column="18" />
+        <state vertical-scroll-proportion="-17.115385" vertical-offset="2122" max-vertical-offset="2703">
+          <caret line="151" column="44" selection-start-line="151" selection-start-column="11" selection-end-line="151" selection-end-column="44" />
           <folding>
-            <marker date="1506422425251" expanded="true" signature="420:547" placeholder="..." />
-            <marker date="1506422425251" expanded="true" signature="436:530" placeholder="..." />
-            <marker date="1506422425251" expanded="true" signature="495:513" placeholder="..." />
-            <marker date="1506422425251" expanded="true" signature="1552:1609" placeholder="..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT id, m..cars..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT c.id,..car..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT c.id,..cars..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT c.id,..cars..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT c.mod..car..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT c.mod..car..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT c.id,..cars..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT c.id,..cars..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT model..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT color..carColor..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT yearO..carYearOfIssue..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT mark ..carMark..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT engin..carEngineCapacity..." />
+            <marker date="1506591797316" expanded="true" signature="-1:-1" placeholder="SELECT mo.mo..car..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task1/curl/config.php">
+    <entry file="file://$PROJECT_DIR$/task2/server/asd.wsdl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615" vertical-offset="51" max-vertical-offset="765">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="27" />
-          <folding>
-            <marker date="1506424974587" expanded="true" signature="336:603" placeholder="..." />
-            <marker date="1506424974587" expanded="true" signature="380:558" placeholder="..." />
-            <marker date="1506424974587" expanded="true" signature="467:513" placeholder="..." />
-            <marker date="1506424974587" expanded="true" signature="778:1065" placeholder="..." />
-            <marker date="1506424974587" expanded="true" signature="824:1016" placeholder="..." />
-            <marker date="1506424974587" expanded="true" signature="917:969" placeholder="..." />
-            <marker date="1506424974587" expanded="true" signature="1241:1620" placeholder="..." />
-            <marker date="1506424974587" expanded="true" signature="1289:1571" placeholder="..." />
-            <marker date="1506424974587" expanded="true" signature="1386:1522" placeholder="..." />
-            <marker date="1506424974587" expanded="true" signature="1800:2194" placeholder="..." />
-            <marker date="1506424974587" expanded="true" signature="1850:2141" placeholder="..." />
-            <marker date="1506424974587" expanded="true" signature="1947:2090" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task1/curl/libs/CUrlFootballPool.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="2465">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="22" />
+        <state vertical-scroll-proportion="-15.827586" vertical-offset="255" max-vertical-offset="867">
+          <caret line="42" column="69" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task1/curl/index.php">
+    <entry file="file://$PROJECT_DIR$/task2/server/libs/soapServer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11703958" vertical-offset="0" max-vertical-offset="581">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.029259896" vertical-offset="0" max-vertical-offset="581">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testSoapServer/CarInfoSql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="2703">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1506596311695" expanded="true" signature="-1:-1" placeholder="SELECT id, m..cars..." />
+            <marker date="1506596311695" expanded="true" signature="-1:-1" placeholder="SELECT model..." />
+            <marker date="1506596311695" expanded="true" signature="-1:-1" placeholder="SELECT color..carColor..." />
+            <marker date="1506596311695" expanded="true" signature="-1:-1" placeholder="SELECT yearO..carYearOfIssue..." />
+            <marker date="1506596311695" expanded="true" signature="-1:-1" placeholder="SELECT mark ..carMark..." />
+            <marker date="1506596311695" expanded="true" signature="-1:-1" placeholder="SELECT engin..carEngineCapacity..." />
+            <marker date="1506596311695" expanded="true" signature="-1:-1" placeholder="SELECT mo.mo..car..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testSoapServer/stockquote1.wsdl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testSoapServer/server1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="493">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testSoapServer/classTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="204">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testSoapServer/client3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14629948" vertical-offset="0" max-vertical-offset="581">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding />
         </state>
       </provider>
