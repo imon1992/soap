@@ -1,0 +1,118 @@
+<?xml version ='1.0' encoding ='UTF-8'?>
+<definitions name='StockQuote'
+    targetNamespace='http://example.org/StockQuote'
+    xmlns:tns=' http://example.org/StockQuote '
+    xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/'
+    xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+    xmlns:soapenc='http://schemas.xmlsoap.org/soap/encoding/'
+    xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'
+    xmlns='http://schemas.xmlsoap.org/wsdl/'>
+
+    <message name='getFullCarInfoRequest'>
+        <part name='id' type='xsd:string'/>
+    </message>
+    <message name='getFullCarInfoResponse'>
+        <part name='Result' type='xsd:string'/>
+    </message>
+
+    <message name='getCarsInfoByParamsRequest'>
+        <part name='paramsArr' type='xsd:string'/>
+    </message>
+    <message name='getCarsInfoByParamsResponse'>
+        <part name='Result' type='xsd:string'/>
+    </message>
+
+    <message name='getCarModelMarkIdRequest'>
+    </message>
+    <message name='getCarModelMarkIdResponse'>
+        <part name='Result' type='xsd:string'/>
+    </message>
+
+    <message name='addOrderRequest'>
+        <part name='paramsArr' type='xsd:string'/>
+    </message>
+    <message name='addOrderResponse'>
+        <part name='Result' type='xsd:string'/>
+    </message>
+
+    <portType name='StockQuotePortType'>
+        <operation name='getFullCarInfo'>
+            <input message='tns:getFullCarInfoRequest'/>
+            <output message='tns:getFullCarInfoResponse'/>
+        </operation>
+
+        <operation name='getCarsInfoByParams'>
+            <input message='tns:getCarsInfoByParamsRequest'/>
+            <output message='tns:getCarsInfoByParamsResponse'/>
+        </operation>
+
+        <operation name='getCarModelMarkId'>
+            <input message='tns:getCarModelMarkIdRequest'/>
+            <output message='tns:getCarModelMarkIdResponse'/>
+        </operation>
+
+        <operation name='addOrder'>
+            <input message='tns:addOrderRequest'/>
+            <output message='tns:addOrderResponse'/>
+        </operation>
+    </portType>
+
+    <binding name='StockQuoteBinding' type='tns:StockQuotePortType'>
+        <soap:binding style='rpc'
+            transport='http://schemas.xmlsoap.org/soap/http'/>
+        <operation name='getFullCarInfo'>
+            <soap:operation soapAction='urn:xmethods-delayed-quotes#getFullCarInfo'/>
+            <input>
+                <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+                    encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+            </input>
+            <output>
+                <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+                    encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+            </output>
+        </operation>
+
+        <operation name='getCarsInfoByParams'>
+            <soap:operation soapAction='urn:xmethods-delayed-quotes#getCarsInfoByParams'/>
+            <input>
+                <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+                    encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+            </input>
+            <output>
+                <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+                    encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+            </output>
+        </operation>
+
+        <operation name='getCarModelMarkId'>
+            <soap:operation soapAction='urn:xmethods-delayed-quotes#getCarModelMarkId'/>
+            <input>
+                <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+                           encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+            </input>
+            <output>
+                <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+                           encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+            </output>
+        </operation>
+
+        <operation name='addOrder'>
+            <soap:operation soapAction='urn:xmethods-delayed-quotes#addOrder'/>
+            <input>
+                <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+                           encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+            </input>
+            <output>
+                <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+                           encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+            </output>
+        </operation>
+    </binding>
+
+    <service name='StockQuoteService'>
+        <port name='StockQuotePort' binding='StockQuoteBinding'>
+            <!--<soap:address location='http://192.168.0.15/~user14/soap/task2/server/libs/server1.php'/>-->
+            <soap:address location='http://soap/task2/server/libs/server1.php'/>
+        </port>
+    </service>
+</definitions>

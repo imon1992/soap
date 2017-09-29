@@ -8,10 +8,10 @@
     xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'
     xmlns='http://schemas.xmlsoap.org/wsdl/'>
 
-    <message name='asdRequest'>
+    <message name='getFullCarInfoRequest'>
         <part name='id' type='xsd:string'/>
     </message>
-    <message name='asdResponse'>
+    <message name='getFullCarInfoResponse'>
         <part name='Result' type='xsd:string'/>
     </message>
 
@@ -22,22 +22,34 @@
         <part name='Result' type='xsd:string'/>
     </message>
 
+    <message name='getCarModelMarkIdRequest'>
+    </message>
+    <message name='getCarModelMarkIdResponse'>
+        <part name='Result' type='xsd:string'/>
+    </message>
+
     <portType name='StockQuotePortType'>
-        <operation name='asd'>
-            <input message='tns:asdRequest'/>
-            <output message='tns:asdResponse'/>
+        <operation name='getFullCarInfo'>
+            <input message='tns:getFullCarInfoRequest'/>
+            <output message='tns:getFullCarInfoResponse'/>
         </operation>
+
         <operation name='getCarsInfoByParams'>
             <input message='tns:getCarsInfoByParamsRequest'/>
             <output message='tns:getCarsInfoByParamsResponse'/>
+        </operation>
+
+        <operation name='getCarModelMarkId'>
+            <input message='tns:getCarModelMarkIdRequest'/>
+            <output message='tns:getCarModelMarkIdResponse'/>
         </operation>
     </portType>
 
     <binding name='StockQuoteBinding' type='tns:StockQuotePortType'>
         <soap:binding style='rpc'
             transport='http://schemas.xmlsoap.org/soap/http'/>
-        <operation name='asd'>
-            <soap:operation soapAction='urn:xmethods-delayed-quotes#asd'/>
+        <operation name='getFullCarInfo'>
+            <soap:operation soapAction='urn:xmethods-delayed-quotes#getFullCarInfo'/>
             <input>
                 <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
                     encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
@@ -59,11 +71,24 @@
                     encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
             </output>
         </operation>
+
+        <operation name='getCarModelMarkId'>
+            <soap:operation soapAction='urn:xmethods-delayed-quotes#getCarModelMarkId'/>
+            <input>
+                <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+                           encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+            </input>
+            <output>
+                <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+                           encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+            </output>
+        </operation>
     </binding>
 
     <service name='StockQuoteService'>
         <port name='StockQuotePort' binding='StockQuoteBinding'>
-            <soap:address location='http://192.168.0.15/~user14/soap/testSoapServer/server1.php'/>
+            <!--<soap:address location='http://192.168.0.15/~user14/soap/testSoapServer/server1.php'/>-->
+            <soap:address location='http://soap/testSoapServer/server/libs/server1.php'/>
         </port>
     </service>
 </definitions>

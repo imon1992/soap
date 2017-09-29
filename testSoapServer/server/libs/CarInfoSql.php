@@ -39,7 +39,6 @@ class CarInfoSql
 
     public function getCarMarkAndModel()
     {
-//        return 'sdasa';
         $result = [];
         if($this->dbConnect !== 'connect error')
         {
@@ -106,37 +105,15 @@ class CarInfoSql
         return $result;
     }
 
-    public function addOrder($orderParams)
-    {
-        if($this->dbConnect !== 'connect error')
-        {
-            $stmt =$this->dbConnect->prepare('INSERT INTO orders(id_car,firstName,surname,paymentMethod)
-                                              VALUES(:carId,:firstName,:surname,:paymentMethod)');
-            $stmt->bindParam(':carId',$orderParams['carId']);
-            $stmt->bindParam(':firstName',$orderParams['firstName']);
-            $stmt->bindParam(':surname',$orderParams['surname']);
-            $stmt->bindParam(':paymentMethod',$orderParams['paymentMethod']);
-//            var_dump($stmt);
-            $result = $stmt->execute();
-//            var_dump($result);
-        }else
-        {
-            return 'error';
-        }
-
-        return $result;
-    }
-
 }
 
 //$c = new CarInfoSql();
-//////$v = json_decode('{
-//////	"mark": "BMW",
-//////	"color": "red",
-//////	"model": "x5"
-//////}');
-//$x = $c->addOrder(['carId'=>1,'firstName'=>'Andrew','surname'=>'Kolotii','paymentMethod'=>'credit card']);
-//////$x = $c->getCarsInfoByParams(['mark'=>'BMW','color'=>'red']);
-//////$x = $c->getModelYearAmountColorSpeedPrice(2);
-//////foreach
+////$v = json_decode('{
+////	"mark": "BMW",
+////	"color": "red",
+////	"model": "x5"
+////}');
+////$x = $c->getCarsInfoByParams(['mark'=>'BMW','color'=>'red']);
+////$x = $c->getModelYearAmountColorSpeedPrice(2);
+////foreach
 //var_dump($x);

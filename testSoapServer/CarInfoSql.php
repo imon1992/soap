@@ -1,17 +1,15 @@
 <?php
-include('config.php');
+
 class CarInfoSql{
 
-    private $dbConnect ;
+    private $dbConnect;
 
     public function __construct()
     {
-        //$this->dbConnect = 'dfdsfs';
-        $baseAndHostDbName = MY_SQL_DB.':host='.MY_SQL_HOST.'; dbname='. MY_SQL_DB_NAME;
+        $baseAndHostDbName = MY_SQL_DB.':host='.MY_SQL_HOST.'; dbname='.MY_SQL_DB_NAME;
         try {
             $this->dbConnect =  new PDO($baseAndHostDbName, MY_SQL_USER , MY_SQL_PASSWORD);
             $this->dbConnect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            //var_dump($this->dbConnect);
         } catch (PDOException $e) {
             $this->dbConect =  'connect error';
         }
@@ -44,11 +42,44 @@ class CarInfoSql{
         return $sql;
     }
 
+    public function getCarMarkAndModel()
+    {
+        $result = [];
+        if($this->dbConnect !== 'connect error')
+        {
+            $stmt =$this->dbConnect->prepare('SELECT id, mark, model
+                FROM cars');
+            $stmt->execute();
+        }
+
+        while($assocRow = $stmt->fetch(PDO::FETCH_ASSOC))
+        {
+            $result[]=$assocRow;
+        }
+        return $result; 
+    }
+
+    public function getModelYearAmountColorSpeedPrice($id)
+    {
+        $result = [];
+        if($this->dbConnect !== 'connect error')
+        {
+            $stmt =$this->dbConnect->prepare('SELECT model, year, engine, color, maxSpeed, price
+                FROM cars
+                WHERE id = :id');
+            $stmt->bindParam(':id',$id);
+            $stmt->execute();
+        }
+
+        while($assocRow = $stmt->fetch(PDO::FETCH_ASSOC))
+        {
+            $result[]=$assocRow;
+        }
+        return $result;
+    }
 
     public function getCarsInfoByParams($paramsArr)
     {
-        //return 'asd';
-        //return $this->dbConnect;
         $sql = $this->generateSortSql($paramsArr);
 
         $result = [];
@@ -61,7 +92,7 @@ class CarInfoSql{
             {
                 $stmt->bindParam($paramName,$paramValue);
             }
-            // var_dump($stmt);
+           // var_dump($stmt);
 
 
             $stmt->execute();
@@ -70,18 +101,26 @@ class CarInfoSql{
             {
                 $result[]=$assocRow;
             }
-            // var_dump($result);
+           // var_dump($result);
             return $result;
         }
     }
 
-    public function asd($id)
-    {
-        //var_dump($this->dbConnect);
+    public function asd($id){
         return $id;
     }
 
 }
+//define("MY_SQL_DB",     "mysql");
+//define("MY_SQL_HOST",     "localhost");
+//define("MY_SQL_DB_NAME",     "user14");
+//define("MY_SQL_USER",     "user14");
+//define("MY_SQL_PASSWORD",     "tuser14");
 
-$c = new CarInfoSql();
-$c->asd(1);
+//$c = new carInfoSql();
+//$x = $c->getModelYearAmountColorSpeedPrice(1);
+
+
+//$x = $c->getCarsInfoByparams(['mark'=>'BMW','color'=>'red']);
+
+//var_dump($x);
