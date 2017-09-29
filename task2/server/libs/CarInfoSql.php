@@ -24,6 +24,7 @@ class CarInfoSql
         $arrLength = count($paramArr);
         $i = 1;
         foreach ($paramArr as $paramName => $paramValue) {
+
             if ($arrLength != $i) {
                 $where .= $paramName . '=:' . $paramName . ' AND ';
             } else {

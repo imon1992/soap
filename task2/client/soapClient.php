@@ -1,5 +1,6 @@
 <?php
 ini_set("soap.wsdl_cache_enabled", "0");
+//ini_set('default_socket_timeout', 60);
 //$client = new SoapClient("server/stockquote1.wsdl");
 //var_dump('stockquote1.wsdl');
 //var_dump($client);
@@ -17,11 +18,12 @@ if($_POST['AllModelsMarksId'])
 {
     try
     {
-        $client = new SoapClient("http://soap/task2/server/stockquote.wsdl");
+        $client = new SoapClient("http://192.168.0.15/~user14/soap/task2/server/stockquote.wsdl",array('trace' => true, 'keep_alive' => false));
+//var_dump($client->__getFunctions());
         echo $client->getCarModelMarkId();
     }catch (SoapFault $e)
     {
-        echo $e->getMessage();
+      echo $e->getMessage();
     }
 
 }
