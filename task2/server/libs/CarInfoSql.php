@@ -24,11 +24,34 @@ class CarInfoSql
         $arrLength = count($paramArr);
         $i = 1;
         foreach ($paramArr as $paramName => $paramValue) {
-
             if ($arrLength != $i) {
-                $where .= $paramName . '=:' . $paramName . ' AND ';
+                if($paramName == 'engine')
+                {
+                    $where .= ' CAST('.$paramName . ' AS CHAR)' . '=:' .$paramName .' AND ';
+                    $i++;
+                    continue;
+                }
+                if($paramName == 'maxSpeed' || $paramName == 'price')
+                {
+                    $where .= $paramName . ' BETWEEN :' . $paramName .'1 AND :' . $paramName . '2 AND ';
+                }else
+                {
+                    $where .= $paramName . '=:' . $paramName . ' AND ';
+                }
             } else {
-                $where .= $paramName . '=:' . $paramName;
+                if($paramName == 'engine')
+                {
+                    $where .= ' CAST('.$paramName . ' AS CHAR)' . '=:' .$paramName;
+                    $i++;
+                    continue;
+                }
+                if($paramName == 'maxSpeed' || $paramName == 'price')
+                {
+                    $where .= $paramName . ' BETWEEN :' . $paramName .'1 AND :' . $paramName . '2';
+                }else
+                {
+                    $where .= $paramName . '=:' . $paramName;
+                }
             }
             $i++;
         }
@@ -40,7 +63,6 @@ class CarInfoSql
 
     public function getCarMarkAndModel()
     {
-//        return 'sdasa';
         $result = [];
         if($this->dbConnect !== 'connect error')
         {
@@ -91,7 +113,14 @@ class CarInfoSql
         if ($this->dbConnect !== 'connect error') {
             $stmt = $this->dbConnect->prepare($sql);
             foreach ($paramsArr as $paramName => &$paramValue) {
-                $stmt->bindParam($paramName, $paramValue);
+                if(is_array($paramValue))
+                {
+                    $stmt->bindParam($paramName . '1',$paramValue[0]);
+                    $stmt->bindParam($paramName . '2',$paramValue[1]);
+                }else
+                {
+                    $stmt->bindParam($paramName, $paramValue);
+                }
             }
             $stmt->execute();
 
@@ -117,9 +146,7 @@ class CarInfoSql
             $stmt->bindParam(':firstName',$orderParams['firstName']);
             $stmt->bindParam(':surname',$orderParams['surname']);
             $stmt->bindParam(':paymentMethod',$orderParams['paymentMethod']);
-//            var_dump($stmt);
             $result = $stmt->execute();
-//            var_dump($result);
         }else
         {
             return 'error';
@@ -129,15 +156,3 @@ class CarInfoSql
     }
 
 }
-
-//$c = new CarInfoSql();
-//////$v = json_decode('{
-//////	"mark": "BMW",
-//////	"color": "red",
-//////	"model": "x5"
-//////}');
-//$x = $c->addOrder(['carId'=>1,'firstName'=>'Andrew','surname'=>'Kolotii','paymentMethod'=>'credit card']);
-//////$x = $c->getCarsInfoByParams(['mark'=>'BMW','color'=>'red']);
-//////$x = $c->getModelYearAmountColorSpeedPrice(2);
-//////foreach
-//var_dump($x);

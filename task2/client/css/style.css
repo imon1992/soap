@@ -1,0 +1,15 @@
+.dropdowns{
+    height: 80px;
+}
+#carInfo{
+    margin-left: 100px;
+    margin-right: 100px;
+    float: left;
+}
+#carInfo{
+    float: left;
+}
+
+#order input, #order select{
+    display: block;
+}

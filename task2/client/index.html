@@ -9,7 +9,8 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,22 +27,25 @@
             <select id="model"class="form-control">
                 <option>none</option>
                 <option>X5</option>
-                <option>x6</option>
+                <option>X6</option>
+                <option>S60</option>
+                <option>S80</option>
             </select>
         </div>
 
         <div class="col-md-2">
             <label> select year  </label>
-            <select class="form-control">
+            <select id="year" class="form-control">
                 <option>none</option>
                 <option>2010</option>
                 <option>2016</option>
             </select>
+            <div class="error"></div>
         </div>
 
         <div class="col-md-2">
             <label> select engine </label>
-            <select class="form-control">
+            <select id="engine" class="form-control">
                 <option>none</option>
                 <option>2.4</option>
                 <option>1.6</option>
@@ -50,16 +54,16 @@
 
         <div class="col-md-2">
             <label> select color </label>
-            <select class="form-control">
+            <select id="color" class="form-control">
                 <option>none</option>
                 <option>red</option>
-                <option>green</option>
+                <option>black</option>
             </select>
         </div>
 
         <div class="col-md-2">
             <label> select maxSpeed </label>
-            <select class="form-control">
+            <select id="maxSpeed" class="form-control">
                 <option>none</option>
                 <option>150-200</option>
                 <option>200-250</option>
@@ -68,7 +72,7 @@
 
         <div class="col-md-2">
             <label> select price </label>
-            <select class="form-control">
+            <select id="price" class="form-control">
                 <option>none</option>
                 <option>1000-10000</option>
                 <option>10000-20000</option>
@@ -82,56 +86,12 @@
 </div>
 <div class="row text-center">
     <div class="contentBlock">
-</div>
-<script src="myJs.js"></script>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script>
-//    var xhr = new XMLHttpRequest();
-//
-//    var json = JSON.stringify({
-//        name: "Виктор",
-//        surname: "Цой"
-//    });
-//
-//    xhr.open("POST", 'http://soap/task2/client/soapClient.php', true)
-//    xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
-//
-//    xhr.onreadystatechange = function(){console.log(23213)};
-//function getXmlHttp(){
-//    var xmlhttp;
-//    try {
-//        xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
-//    } catch (e) {
-//        try {
-//            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-//        } catch (E) {
-//            xmlhttp = false;
-//        }
-//    }
-//    if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
-//        xmlhttp = new XMLHttpRequest();
-//    }
-//    return xmlhttp;
-//}
-//
-//var json_upload = "json_name=" + JSON.stringify({'carId':1,'firstName':'Andrew','surname':'Kolotii','paymentMethod':'credit card'});
-//console.log(json_upload);
-//var xmlhttp = getXmlHttp()
-//xmlhttp.open('POST', 'http://soap/task2/client/soapClient.php', false);
-//xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-//xmlhttp.send(json_upload);
-//if(xmlhttp.status == 200) {
-//    alert(xmlhttp.responseText);
-//}
-</script>
-<style>
-    .filter{
-   text-align: center; 
-    }
-</style>
+    </div>
+    <script src="js/main.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

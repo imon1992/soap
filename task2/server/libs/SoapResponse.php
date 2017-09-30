@@ -27,7 +27,6 @@ class SoapResponse
 
     public function getFullCarInfo($idJson)
     {
-//        return 'sfasfas';
         $id = json_decode($idJson);
         $result = $this->carInfo->getModelYearAmountColorSpeedPrice($id);
         $resultJSON = json_encode($result);
@@ -43,7 +42,6 @@ class SoapResponse
 
     public function addOrder($orderParamsJson)
     {
-//        return $orderParamsJson;
         $orderParams = json_decode($orderParamsJson,true);
         if(is_array($orderParams))
         {
@@ -57,7 +55,3 @@ class SoapResponse
     }
 
 }
-//
-//$c = new SoapResponse();
-//$x = $c->addOrder('{"carId":1,"firstName":"Andrew","surname":"Kolotii","paymentMethod":"credit card"}');
-//var_dump($x);
